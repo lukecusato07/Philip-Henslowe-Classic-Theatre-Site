@@ -1,0 +1,157 @@
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+ 
+   
+   Filename: ph_styles.css
+
+*/
+
+/* Goal 3: Adding @font-face rules */
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	url(cac_champagne.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Grunge;
+	src: url(1942.woff) format('woff'),
+	url(1942.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Dobkin;
+	src: url(DobkinPlain.woff) format('woff'),
+	url(DobkinPlain.ttf) format('ttf');
+}
+/* End goal 3 */
+
+/* Structural Styles */
+/* Goal 4: Style rule for html background */
+html {
+	background-color: hsl(91, 8%, 56%);
+}
+/* End goal 4 */
+
+/* Goal 5: Style rule for body element */
+body {
+	background-color: hsl(58, 31%, 84%);
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+/* End goal 5 */
+
+/* Goal 6: Style rule for header */
+header {
+	background-color: black;
+}
+/* End goal 6 */
+
+/* Goal 7: Style rule for p elements */
+p {
+	margin: 0px;
+	padding: 5px 25px 25px 25px;
+}
+/* End goal 7 */
+
+/* Goal 8: Style rule for paragraphs that are direct children of body element */
+body > p {
+	font-size: 1.1em;
+	text-align: center;
+}
+/* End goal 8 */
+
+/* Goal 9: Style rule for address elements */
+address {
+	font-style: normal;
+	font-size: 0.9em;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* End goal 9 */
+
+
+
+/* Navigation Styles */
+/* Goal 10: Style rule for nav a selector */
+nav a {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* Goal 11: Formatting hpertext links */
+	color: white;
+	text-decoration: none;
+	background-color: hsla(0, 0%, 42%, 0.4);
+	/* End goal 11 */
+}
+/* End goal 10 */
+
+/* Goal 12: Styling for hover and active links */
+nav a:hover,
+nav a:active {
+	color: hsla(0, 0%, 100%, 0.7);
+	background-color: hsl(0, 0%, 42%, 0.7);
+}
+/* End goal 12 */
+
+
+/* Section Styles */
+/* Goal 13: Style rule for section.playbill h1 */
+section.playbill h1 {
+	margin: 0px;
+	font-size: 3em;
+	font-weight: normal;
+	padding: 20px 0px 10px 20px;
+}
+/* End goal 13 */
+
+/* Goal 14: Style rules for plays */
+section#play1 {
+	background-color: hsl(240, 100%, 88%);
+}
+
+section#play2 {
+	background-color: hsl(25, 88%, 73%);
+}
+
+section#play3 {
+	background-color: hsl(0, 100%, 75%);
+}
+
+section#play4 {
+	background-color: hsl(296, 86%, 86%);
+}
+/* End goal 14 */
+
+/* Goal 15: Style rules for plays h1 */
+section#play1 h1 {
+	font-family: Champagne, cursive;
+}
+
+section#play2 h1 {
+	font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+section#play3 h1 {
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 h1 {
+	font-family: Dobkin, cursive;
+}
+/* End goal 15 */
+
+/* Definition List Styles */
+
+dt {
+	color: hsla(0, 0%, 0%, 0.4);
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+dd {
+	font-size: 1.3em;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
